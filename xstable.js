@@ -12,7 +12,7 @@
  * For advanced features like sorting, paging & filtering, this component
  * may be very well used in combination with datatables.net.
  *
- * Documentation:
+ * Documentation :
  * opts.rows expects an object containing array of arrays of cells (each representing a row) for example [['<td class="id">1</td>','<td class="name">Ray</td>']['<td class="id">2</td>','<td class="name">Mark</td>']]
  *
  * OR if you want to provide the row too (e.g. including classnames or other attributes), pass the TR attribute string as a second value of the row array:
