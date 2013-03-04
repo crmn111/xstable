@@ -1,0 +1,380 @@
+/**********************************************************************
+ * 
+ * table component 0.1
+ * author: dirkjan@degroot.in
+ * date: 30-05-2012
+ * 
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html 
+ * 
+ * Credits: All credits go to a person who's name remains unknown
+ * 
+ **********************************************************************/
+
+table.overview {
+	font-family:arial,verdana;
+    background-color: #FFFFFF;
+    border:#bbb 1px solid;
+    border-left:0;
+    border-right:0;
+    border-collapse: separate;
+    margin: 0;
+    padding: 0;
+    width: 100%!important;
+    z-index: 100;
+}
+
+table.overview caption {
+	width:100%;
+	height:3.3em;
+	line-height:3.3em;	
+	font-weight:bold;
+	background-color:#CFCFCF;
+	color:#333;
+	font-size:12px;
+    padding-left:.5em;
+}
+
+table.overview colgroup.hover {
+    background-color: #F1F3F6;
+}
+
+table.overview tbody {
+    height: auto;
+    max-height: 100%;
+}
+
+table.overview span.dt {
+	line-height:1.5em;
+	display:block;
+}
+
+table.overview thead tr .sorting {
+    background-image: url("images/bg-white.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+table.overview thead tr .sorting_asc {
+    background: url("images/asc-white.png") no-repeat right center;
+}
+table.overview thead tr .sorting_desc {
+    background: url("images/desc-white.png") no-repeat right center;
+}
+table.overview thead tr .sorting_desc, table.overview thead tr .sorting_asc {
+    background-color: #4D8DB3;
+    color:#fff;
+}
+
+table.overview th {
+    background-color: #CFCFCF;
+    border-color: #333;
+    border-style: none solid solid none;
+    border-width: 0px;
+    height:2em;
+    line-height:2em;
+    padding:5px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    color:#333;
+}
+
+table.overview th.hover , table.overview th:hover, table.overview th:hover, table.overview th:focus {
+	background-color:#666;
+	color:#fff;
+	cursor:pointer;
+}
+
+table.overview a img {
+	border:0;
+}
+
+table.overview td a {
+	color: #2055B0!important;
+	text-decoration:none;
+}
+
+table.overview td:hover a {
+	text-decoration:underline;	
+}
+
+table.overview a:visited, table.overview a:focus {
+	color:blue;
+}
+
+table.overview textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	min-width:15em;
+	width:98%;
+	height:2.5em;
+	border:1px solid #ccc;
+	resize:vertical; 
+	max-height:300px; 
+	min-height:40px;
+	padding:.2em;
+}
+
+table.overview th span.resize-handle {
+    background-color: transparent;
+    border: 0 none;
+    cursor: e-resize;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+}
+table.overview th.lastCol, table.overview th:last-child {
+    border-right: 0 none;
+}
+table.overview th.second-row {
+    background: none repeat scroll 0 50% transparent;
+    border-color: #D1D1D1;
+    border-style: solid solid none none;
+    border-width: 1px;
+    font-weight: bold;
+    padding: 2px 7px;
+    text-align: right;
+}
+table.overview.single tbody tr td {
+    -moz-user-select: none;
+}
+table.overview td {
+    border-color: #E2E2E2;
+    border-style: none solid none none;
+    border-width: 0px;
+    cursor: default;
+    padding:5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table.overview td.hover {
+	background-color:#F7F7AD;
+	cursor:pointer;
+}
+
+table.overview tr.ui-selectee td {
+    border-bottom-style: solid;
+}
+table.overview tbody tr.lastRow {
+    height: auto;
+}
+table.overview tbody tr.lastRow td {
+    background-color: #F1F3F6;
+    border-top: 0px solid #E2E2E2;
+    height: auto;
+}
+table.overview td.right-aligned {
+    text-align: right;
+}
+table.overview td.lastCol, table.overview td:last-child {
+    border-style: none;
+    padding-right: 12px;
+}
+table.overview th.checkbox-column, table.overview td.checkbox-column {
+    min-width: 20px;
+    text-align: center;
+}
+table.overview td.checkbox-column, table.overview td.target-column, table.overview td.center-align {
+    text-align: center;
+}
+table.overview td input[type="text"] {
+    width: 200px;
+}
+
+table.overview tr.o,table.overview tr.odd {
+    background-color: transparent;
+}
+table.overview tr.e,table.overview tr.even, table.overview tr.alternate {
+    background-color: #F1F3F6;
+}
+
+
+/*table.overview tr:nth-child(2n) {
+    background-color: #F1F3F6;
+}*/
+
+table.overview.focus tr.ui-selected {
+    background-color: #4C6382;
+}
+table.overview tr.ui-selected {
+    background-color: #4C6382;
+}
+table.overview tr.ui-selecting {
+    background-color: #869CBD;
+}
+table.overview tr.ui-selected td, table.overview tr.ui-selected td label, table.overview tr.ui-selected td li, table.overview tr.ui-selected td span {
+    color: #FFFFFF;
+}
+
+table.overview tr:hover {
+    background-color: #FFFFC8!important;
+    color: #000000;
+}
+
+tr.focus, table.overview tr.focus td {
+    background-color: #F5F598!important;
+}
+
+table.overview td.focus {
+	background-color:#F7F7AD;
+}
+
+table.overview tr.custom-selected, table.overview tr.custom-selected:active {
+    background-color: #4C6382;
+    color: #000000;
+}
+table.overview tr.custom-selected:hover, table.overview tr.ui-selected:hover td {
+    background-color: #98AAC2;
+    color: #000000;
+}
+table.overview tr.custom-selected:active {
+    background-color: #4C6382;
+    color: #000000;
+}
+table.overview tr.ui-selecting {
+    background-color: #869CBD;
+}
+table.overview thead tr {
+    height: 24px;
+}
+table.overview td.table-empty-message {
+    text-align: center;
+    vertical-align: middle;
+}
+table.overview tbody tr td {
+   /*  -moz-user-select: none; */
+}
+
+table.overview .cntr {
+	text-align:center;
+}
+
+div#pager {
+	height:2em;
+}
+
+#grid_notice {
+	font-size:100%;
+	color:#666;
+	line-height:1.8em;
+}
+
+/* paging/filter and so on */
+
+.dataTables_length {
+	position:absolute;
+	top:.8em;
+	left:.8em;
+    z-index:9999;
+}
+
+.dataTables_filter {
+	position:absolute;
+	top:.8em;
+	right:.8em;
+    z-index:9999;
+}
+
+.dataTables_wrapper {
+	background-color:#CFCFCF;
+	padding-bottom:3.3em;
+ 	border:#bbb 1px solid;
+	/*
+	-moz-border-radius:3px;
+		border-radius:3px;*/
+	
+	position:relative;
+	width:100%;
+	/*margin:1em auto;*/
+}
+
+.dataTables_info {
+	position:absolute;
+	bottom:1.1em;
+	left:.5em;
+}
+
+.dataTables_paginate {
+	position:absolute;
+	right:.5em;
+	bottom:.45em;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border: 1px solid #333;
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 61%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(61%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 61%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 61%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 61%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 61%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.dataTables_paginate a {
+	display:inline-block;
+	padding:.5em;
+    color: #555555;
+    font-weight: normal;
+    border-left:1px solid #ccc;
+    text-decoration: none;
+}
+
+.dataTables_paginate a.enabled:hover, .dataTables_paginate a.enabled:focus, .dataTables_paginate .paginate_active {
+    background-color:#848689;
+    /*background-color:#4D8DB3;*/
+    color:#fff;
+}
+
+.dataTables_paginate a:first-child {
+    border-left:0;
+}
+
+.dataTables_paginate a.first {
+    border-radius:4px 0 0 4px;
+}
+
+.dataTables_paginate a.last {
+    border-radius:0 4px 4px 0;
+}
+
+.dataTables_paginate a.paginate_button_disabled {
+    opacity:.4;
+}
+
+.paging_two_button a:first-child {
+	border-right:1px solid #333;
+}
+.paginate_disabled_previous, .paginate_disabled_next {
+    background-image: none;
+    opacity: 0.35;
+}
+
+.paginate_enabled_next:hover, .paginate_enabled_previous:hover {
+	background-color:#333;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6;
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: normal;
+    outline: medium none;
+}
+
+.ui-state-disabled {
+    cursor: default !important;
+}
+
+.hide { display:none; }

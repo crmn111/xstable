@@ -1,0 +1,39 @@
+Table component 0.1
+
+This component creates a 'simple table' that is accessible and has
+caption, summary and other accessibility features. Also it supports
+column highlighting and clickable cells out of the box to improve
+usability.
+
+For complex tables e.g. with header/id relations or nested tables, you might need to tweak or use another component.
+
+For advanced features like sorting, paging & filtering, this component
+may be very well used in combination with datatables.net.
+
+Documentation:
+opts.rows expects an object containing array of arrays of cells (each representing a row) for example [['<td class="id">1</td>','<td class="name">Ray</td>']['<td class="id">2</td>','<td class="name">Mark</td>']]
+
+OR if you want to provide the row too (e.g. including classnames or other attributes), pass the TR attribute string as a second value of the row array:
+[
+  [
+    ['<td class="id">1</td>','<td class="name">Ray</td>']
+    ['<td class="id">2</td>','<td class="name">Mark</td>']
+    ,
+     'class="x" rel="y" tabindex="0"'
+  ]
+]
+
+Dependencies : jQuery + Mustache template engine (http://mustache.github.com/)
+
+Credits: All credits go to a person who's name remains unknown
+Author: dirkjan@degroot.in
+Location: https://github.com/dirkjan111/xstable
+Date: 30-05-2012
+
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html
+
+Other credits: Allan Jardine, Mic/Pure.js
+
+This file was modified by JetBrains PhpStorm 5.0.2 for binding GitHub repository
